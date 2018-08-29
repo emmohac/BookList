@@ -70,6 +70,31 @@ void BookList::print() const
 	}
 }
 
+void BookList::printBook(int ISBN_num) const
+{
+	if (first == nullptr)
+		cerr << "Bookshelf is empty.";
+	else
+	{
+		bool found = false;
+		Node *current = first;
+
+		while (current != nullptr && !found)
+		{
+			if (current->getBook().getISBN() == ISBN_num)
+			{
+				found = true;
+				current->getBook().getBookInfo();
+			}
+			else
+				current = current->getNext();
+		}
+
+		if (!found)
+			cerr << "Book is not the shelf." << endl;		
+	}
+}
+
 void BookList::destroyList()
 {
 	Node *current = first;

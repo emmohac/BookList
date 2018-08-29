@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include "Book.h"
+#include <iomanip>
 
 using namespace std;
 
@@ -31,6 +32,7 @@ public:
 	void insertBook(const Book &aBook);
 	bool search(int ISBN_num) const;
 	void print() const;
+	void printBook(int ISBN_num) const;
 	void destroyList();
 	~BookList();
 
