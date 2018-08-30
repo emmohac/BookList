@@ -10,23 +10,25 @@ using namespace std;
 
 void createBookShelf(ifstream &infile, BookList &booklist) //NEED TO FIX HERE
 {
-	int isbn = 0;
-	string fname, lname, bookName;
+	string fname, lname, bookName, isbn;
 	
 	infile >> isbn;
+	infile >> fname;
+	infile >> lname;
+	infile >> bookName;
 
-	while (isbn != -999)
+	while (!infile.eof())
 	{
 		Book aBook;
-
-		infile >> fname;
-		infile >> lname;
-		infile >> bookName;
+	
 		aBook.setBookInfo(fname, lname, bookName, isbn);
 
 		booklist.insertBook(aBook);
 
 		infile >> isbn;
+		infile >> fname;
+		infile >> lname;
+		infile >> bookName;
 
 	}
 }
@@ -37,9 +39,7 @@ void readBookShelf(BookList &booklist)
 	infile.open("bookshelf.txt");
 
 	if (!infile)
-	{
 		cerr << "Input file does not exist." << endl;
-	}
 
 	createBookShelf(infile, booklist);
 	infile.close();

@@ -12,13 +12,32 @@ void processChoice(BookList &booklist);
 
 int main()
 {
+	//ifstream infile;
+	//infile.open("bookshelf.txt");
+	//if (!infile)
+	//	cerr << "Cannot open file";
+	//string isbn, fname, lname, book;
+	//infile >> isbn;
+	//infile >> fname;
+	//infile >> lname;
+	//infile >> book;
+	//while (!infile.eof())
+	//{
+	//	cout << "ISBN: " << isbn << endl;
+	//	cout << "Name: " << lname << ", " << fname << endl;
+	//	cout << "Book: " << book << endl;
+	//	infile >> isbn;
+	//	infile >> fname;
+	//	infile >> lname;
+	//	infile >> book;
+	//}
 	BookList aBookList;
 
 	readBookShelf(aBookList);
 
-	displayMenu();
+	//displayMenu();
 
-	processChoice(aBookList);
+	//processChoice(aBookList);
 
 	cout << endl;
 	system("pause");
@@ -42,7 +61,7 @@ void processChoice(BookList &booklist)
 
 	while (choice != 3)
 	{
-		int isbn = 0;
+		string isbn;
 
 		switch (choice)
 		{

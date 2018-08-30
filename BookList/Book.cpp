@@ -5,10 +5,10 @@ Book::Book()
 	authorFirstName = "Unknown";
 	authorLastName = "Unknown";
 	bookName = "Unnamed";
-	ISBN = -1;
+	ISBN = "-1";
 }
 
-void Book::setBookInfo(const string & newAuthorFirstName, const string & newAuthorLastName, const string & newBookName, int ISBN_num)
+void Book::setBookInfo(const string & newAuthorFirstName, const string & newAuthorLastName, const string & newBookName, string ISBN_num)
 {
 	authorFirstName = newAuthorFirstName;
 	authorLastName = newAuthorLastName;
@@ -26,7 +26,7 @@ string Book::getBookName() const
 	return bookName;
 }
 
-int Book::getISBN() const
+string Book::getISBN() const
 {
 	return ISBN;
 }

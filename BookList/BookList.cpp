@@ -23,7 +23,7 @@ void BookList::insertBook(const Book &aBook)
 	++count;
 }
 
-bool BookList::search(int ISBN_num) const
+bool BookList::search(const string &ISBN_num) const
 {
 	if (first == nullptr)
 	{
@@ -38,19 +38,16 @@ bool BookList::search(int ISBN_num) const
 		while (current != nullptr && !found)
 		{
 			if (current->getBook().getISBN() == ISBN_num)
-			{
-				found = true;
-				return found;
-			}
+				return true;
 			else
 				current = current->getNext();
 		}
 
-		if (!found)
-		{
-			cerr << "Book is not the shelf." << endl;
-			return false;
-		}
+		//if (!found)
+		//{
+		//	cerr << "Book is not the shelf." << endl;
+		//	return false;
+		//}
 	}
 }
 
@@ -70,7 +67,7 @@ void BookList::print() const
 	}
 }
 
-void BookList::printBook(int ISBN_num) const
+void BookList::printBook(const string &ISBN_num) const
 {
 	if (first == nullptr)
 		cerr << "Bookshelf is empty.";

@@ -11,17 +11,17 @@ class Book
 {
 public:
 	Book();
-	void setBookInfo(const string &authorFirstName, const string &authorLastName, const string &bookName, int ISBN_num);
+	void setBookInfo(const string &authorFirstName, const string &authorLastName, const string &bookName, string ISBN_num);
 	string getAuthorName() const;
 	string getBookName() const;
-	int getISBN() const;
+	string getISBN() const;
 	void getBookInfo() const;
 	~Book();
 private:
 	string bookName;
 	string authorFirstName;
 	string authorLastName;
-	int ISBN;
+	string ISBN;
 };
 #endif // !BOOK_H
 

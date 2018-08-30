@@ -30,9 +30,9 @@ class BookList
 public:
 	BookList();
 	void insertBook(const Book &aBook);
-	bool search(int ISBN_num) const;
+	bool search(const string &ISBN_num) const;
 	void print() const;
-	void printBook(int ISBN_num) const;
+	void printBook(const string &ISBN_num) const;
 	void destroyList();
 	~BookList();
 
