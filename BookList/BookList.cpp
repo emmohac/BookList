@@ -43,11 +43,11 @@ bool BookList::search(const string &ISBN_num) const
 				current = current->getNext();
 		}
 
-		//if (!found)
-		//{
-		//	cerr << "Book is not the shelf." << endl;
-		//	return false;
-		//}
+		if (!found)
+		{
+			cerr << "Book is not the shelf." << endl;
+			return false;
+		}
 	}
 }
 
