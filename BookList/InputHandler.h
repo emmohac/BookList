@@ -8,28 +8,22 @@
 
 using namespace std;
 
-void createBookShelf(ifstream &infile, BookList &booklist) //NEED TO FIX HERE
+void createBookShelf(ifstream &infile, BookList &booklist)
 {
 	string fname, lname, bookName, isbn;
 	
-	infile >> isbn;
-	infile >> fname;
-	infile >> lname;
-	infile >> bookName;
-
 	while (!infile.eof())
 	{
-		Book aBook;
-	
-		aBook.setBookInfo(fname, lname, bookName, isbn);
-
-		booklist.insertBook(aBook);
-
 		infile >> isbn;
 		infile >> fname;
 		infile >> lname;
 		infile >> bookName;
 
+		Book aBook;
+		
+		aBook.setBookInfo(fname, lname, bookName, isbn);
+
+		booklist.insertBook(aBook);
 	}
 }
 void readBookShelf(BookList &booklist)
