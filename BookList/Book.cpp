@@ -33,8 +33,8 @@ string Book::getISBN() const
 
 void Book::getBookInfo() const
 {
-	cout << "Book: " << bookName << endl;
-	cout << "By: " << authorLastName << ", " << authorFirstName << endl;
+	cout << "Book title: " << bookName << endl;
+	cout << "Author: " << authorLastName << ", " << authorFirstName << endl;
 }
 
 Book::~Book()
