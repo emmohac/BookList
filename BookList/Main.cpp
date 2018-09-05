@@ -12,32 +12,11 @@ void processChoice(BookList &booklist);
 
 int main()
 {
-	//ifstream infile;
-	//infile.open("bookshelf.txt");
-	//if (!infile)
-	//	cerr << "Cannot open file";
-	//string isbn, fname, lname, book;
-	//infile >> isbn;
-	//infile >> fname;
-	//infile >> lname;
-	//infile >> book;
-	//while (!infile.eof())
-	//{
-	//	cout << "ISBN: " << isbn << endl;
-	//	cout << "Name: " << lname << ", " << fname << endl;
-	//	cout << "Book: " << book << endl;
-	//	infile >> isbn;
-	//	infile >> fname;
-	//	infile >> lname;
-	//	infile >> book;
-	//}
 	BookList aBookList;
 
 	readBookShelf(aBookList);
-
-	//displayMenu();
-
-	//processChoice(aBookList);
+	displayMenu();
+	processChoice(aBookList);
 
 	cout << endl;
 	system("pause");
@@ -75,12 +54,12 @@ void processChoice(BookList &booklist)
 			cout << endl;
 
 			if (booklist.search(isbn))
-			{
-				booklist.printBook(isbn);
-				cout << endl;
-			}
+				booklist.printBook(isbn);				
+			cin.clear();
+			cin.ignore(999, '\n');
+			break;
 		default:
-			cout << "Not a good choice." << endl;
+			cout << "    Not a good choice." << endl;
 			break;
 		}
 
@@ -91,6 +70,6 @@ void processChoice(BookList &booklist)
 		cin >> choice;
 
 		if (choice == 3)
-			cout << "Thank you." << endl;
+			cout << "    Thank you." << endl;
 	}
 }
