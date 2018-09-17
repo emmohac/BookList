@@ -30,13 +30,17 @@ class BookList
 public:
 	BookList();
 	void insertBook(const Book &aBook);
-	bool search(const string &ISBN_num) const;
+	bool searchISBN(const string &ISBN_num) const;
+	void searchAuthorName(const string &fname, const string &lname) const;
+	void setBookRead(const string &isbn); //FUNCTION FAILED
 	void print() const;
 	void printBook(const string &ISBN_num) const;
 	void destroyList();
 	~BookList();
 
 private:
+	bool checkBookStatus(const string &isbn) const;
+
 	Node *first;	// pointer to the first node on the list
 	Node *last;		// pointer to the last node on the list
 	int count;		// number of nodes in the list

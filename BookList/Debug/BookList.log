@@ -1,2 +1,6 @@
-﻿  Main.cpp
+﻿  BookList.cpp
+  Main.cpp
+  Generating Code...
+c:\users\huy minh tran\desktop\mybooklist\booklist\booklist.cpp(52): warning C4715: 'BookList::searchISBN': not all control paths return a value
+c:\users\huy minh tran\desktop\mybooklist\booklist\booklist.cpp(192): warning C4715: 'BookList::checkBookStatus': not all control paths return a value
   BookList.vcxproj -> C:\Users\HUY MINH TRAN\Desktop\MyBookList\Debug\BookList.exe

@@ -29,7 +29,9 @@ void displayMenu()
 	cout << "\nSelect one of the following:\n\n";
 	cout << "    1: Print all books" << endl;
 	cout << "    2: Print a book using ISBN" << endl;
-	cout << "    3: Exit" << endl;
+	cout << "    3. Print book using author name" << endl;
+	cout << "    4. Set book as read" << endl;
+	cout << "    5: Exit" << endl;
 }
 
 void processChoice(BookList &booklist)
@@ -38,9 +40,10 @@ void processChoice(BookList &booklist)
 	cout << "Enter your choice: ";
 	cin >> choice;
 
-	while (choice != 3)
+	while (choice != 5)
 	{
 		string isbn;
+		string lname, fname;
 
 		switch (choice)
 		{
@@ -52,11 +55,27 @@ void processChoice(BookList &booklist)
 			cout << "Enter ISBN: ";
 			cin >> isbn;
 			cout << endl;
-
-			if (booklist.search(isbn))
+			
+			if (booklist.searchISBN(isbn))
 				booklist.printBook(isbn);				
 			cin.clear();
 			cin.ignore(999, '\n');
+			break;
+		case 3:
+			cout << "Enter author first name: ";
+			cin >> fname;
+			cout << "Enter author last name: ";
+			cin >> lname;
+			cout << endl;
+
+			booklist.searchAuthorName(fname, lname);
+			cin.clear();
+			cin.ignore(999, '\n');
+			break;
+		case 4:
+			cout << "Enter ISBN: ";
+			cin >> isbn;
+			booklist.setBookRead(isbn);
 			break;
 		default:
 			cout << "    Not a good choice." << endl;
@@ -69,7 +88,7 @@ void processChoice(BookList &booklist)
 		cout << "Enter your choice: ";
 		cin >> choice;
 
-		if (choice == 3)
-			cout << "    Thank you." << endl;
+		if (choice == 5)
+			cout << "Thank you." << endl;
 	}
 }

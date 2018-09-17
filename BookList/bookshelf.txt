@@ -1,11 +1,19 @@
-9780802140142 Glen Duncan I,Lucifer
-9781477820285 Marc Levy P.S.FromParis
-9786045519622 Chi Nguyen 5MuiGio,10TiengBayVaMotCaiKhepMi
-9786045529010 Sieu Nguyen CoDonDeTruongThanh
-9786047739929 Chi Nguyen HarpocratesVaBongHongPhiaTrenThanhPho
-9786041092570 Anh Nguyen NgayXuaCoMotChuyenTinh
-9786049542787 Harper Lee GietConChimNhai
-9786041002364 Son Trinh ThuTinhGuiMotNguoi
-9786041000698 Anh Nguyen ToiThayHoaVangTrenCoXanh
-9786041001527 Tina Seelig WhatIWishIKnewWhenIwas20
--999
+9780802140142 read Glen Duncan I,Lucifer
+9781477820285 read Marc Levy P.S.From-Paris
+9786045519622 read Chi Nguyen 5-Mui-Gio,10-Tieng-Bay-Va-Mot-Cai-Khep-Mi
+9786045529010 read Sieu Nguyen Co-Don-De-Truong-Thanh
+9786047739929 read Chi Nguyen Harpocrates-Va-Bong-Hong-Phia-Tren-Thanh-Pho
+9786041092570 read Anh Nguyen Ngay-Xua-Co-Mot-Chuyen-Tinh
+9786049542787 read Harper Lee Giet-Con-Chim-Nhai
+9786041002364 read Son Trinh Thu-Tinh-Gui-Mot-Nguoi
+9786041000698 read Anh Nguyen Toi-Thay-Hoa-Vang-Tren-Co-Xanh
+9786041001527 read Tina Seelig What-I-Wish-I-Knew-When-I-Was-20
+9780316184137 read Thomas Johnson The-Complete-Poems-Of-Emily-Dickinson
+9786041071476 read Anh Nguyen Bay-Buoc-Toi-Mua-He
+9786041004825 read Anh Nguyen Co-Gai-Den-Tu-Hom-Qua
+9786041004757 read Anh Nguyen Cho-Toi-Xin-Mot-Ve-Di-Tuoi-Tho
+9781101874080 read Paulo Coelho Adultery
+9781501158018 read Connor Franta Not-To-Self
+9780062315007 read Paulo Coelho The-Alchemist
+9780743273565 read F.Scott Fitzgerald The-Great-Gatsby
+9781505984347 read Ijeoma Umebinyuo Question-For-Ada
